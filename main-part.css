@@ -1,0 +1,142 @@
+.main_part{
+    display: flex;
+    margin-bottom: 10vh;
+    padding: 0 105px 0 190px;
+    gap: 147px;
+}
+
+.main_part img {
+    width: 687px;
+    height: 654px;
+}
+
+main .header_text{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+}
+
+main .paragraph_text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #202336;
+   
+}
+
+.line_lower_paragraph{
+    width: 32px;
+    height: 2px;
+    background: #202336;
+    border-radius: 4px;
+}
+
+.link_and_button{
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 35px;
+}
+
+.options{
+    padding-left: 31px;
+    flex: 40%;
+    color: #4A4C53;
+    box-sizing: border-box;
+    height: 52px;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    appearance: none;
+}
+
+.button_lower_selected_menu{
+    border: 1px solid #FB8F1D;
+    width: 180px;
+    height: 52px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mulish';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 60px;
+    background-color: #FB8F1D;
+    color: #FFFFFF;
+}
+
+.button_lower_selected_menu:hover{
+    background-color: #FFFFFF;
+    color: #FB8F1D;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    main .main_part {
+        padding: 0 10vw 0 10vw;
+        justify-content: center;
+    }
+
+    main .options{
+        justify-content: center;
+        font-size: 1.5vh;
+    }
+
+    main .header_text{
+        text-align: center;
+        line-height: 9vh;
+    }
+
+    main .paragraph_text{
+        text-align: center;
+    }
+
+    .main_part img{
+        display: none;
+    }
+
+    .main_part .line_lower_paragraph{
+        margin: auto;
+    }
+
+    .main_part .button_lower_selected_menu{
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1140px){
+    .main_part img{
+        width: 450px;
+        height: 654px;
+    }
+}
+@media screen and (min-width: 1746px) and (max-width: 2560px){
+    .main_part .header_text{
+        font-size: 6vh;
+    }
+
+    .main_part .paragraph_text{
+        font-size: 3vh;
+        line-height: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .main_part img{
+        align-items: center;
+        width: 65vw;
+        height: 55vh;
+    }
+
+    main .options{
+        justify-content: center;
+        font-size: 1.5vh;
+    }
+    .button_lower_selected_menu{
+        font-size: 1.3em;
+    }
+}
