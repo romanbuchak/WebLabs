@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+header{
+    display: flex;
+    padding: 0 10vw;
+    justify-content: space-between;
+    background-color: #ff0000;
+    align-items: center;
+    height: 15vh;
+}
+
+h1{
+    color: aliceblue;
+}
+
+header .button{
+    width: 12vw;
+    cursor: pointer;
+    color: #ff0000;
+    border: 2px solid #ff0000;
+    background-color: #fff;
+    height: 5.5vh;
+    font-size: 16px;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+    
+}
+
+header button:hover{
+    background-color:  #FFD700;
+    color: #0000FF;
+    border: 2px solid #fff;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    display: flex;
+    height: 85vh;
+    width: 27vw;
+    flex-direction: column;
+    text-align: left;
+    border-right: 2px solid #ff0000;
+    padding: 7vh 3vw 0;
+}
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7vh;
+    margin-bottom: 5vh;
+    width: 80%;
+}
+
+.search input{
+    border: 2px #ff0000 solid;
+    border-radius: 10px;
+    height: 40px;
+    width: 60%;
+    background-color: aliceblue;
+    padding-left: 1vw;
+    outline: none;
+}
+
+.search .button{
+    width: 35%;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
+    height: 3em;
+    border-radius: 1vw;
+    transition: 0.3s ease-in-out;
+    margin-right: -1vw;
+} 
+
+.search button:hover{
+    background-color:  #FFD700;
+    color: #0000FF;
+    border: 2px solid black;
+}
+
+.informations{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    height: 10vh;
+}
+
+.sort__by__id{
+    font-family: 'Mulish';
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.sort__by__id button{
+    width: 100px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff0000; 
+    border: 2px solid #ff0000;
+    height: 3.2em;
+    border-radius: 100px;
+    transition: 0.3s ease-in-out;
+    margin-right: 2vw;
+    align-items: center;
+}  
+
+.sort__by__id button:hover{
+    background-color:  #FFD700;
+    color: #0000FF;
+    border: 2px solid black;
+}
+
+.total__price{
+    font-weight: bold;
+    color: #00134c;
+    margin-top: 3vh;
+}
+
+.box{
+    display: flex;
+    width: 25vw;
+    height: 25vh;
+    
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 3vw;
+}
+
+.price{
+    margin: 0 1vw;
+}

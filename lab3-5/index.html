@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Mulish' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
+    <title>New Post</title>
+</head>
+<body>
+    <header>
+        <span>
+            <h1>
+                New Post
+            </h1>
+        </span>
+        <button class="button">Create</button>
+    </header>
+
+    <main>
+        <aside>
+            <form class ="search" id="search__form">
+                <input type="search" id="search__element" placeholder="Search >>>">
+                <button class="button">Search</button>
+            </form>
+        
+            <div class="informations">
+
+                <form class="sort__by__id" id="sort__form__name">
+                    <button class="button">Sort by name</button> 
+                </form>
+
+                <form class="sort__by__id" id="sort__form__price">
+                    <button class="button">Sort by price</button>
+                </form>
+            </div>
+            <div class="total__price">
+                <h3>
+                    Total price : <span id = "total-price">0</span>
+                </h3>
+            </div>
+        </aside>
+        <div class="info" id="boxes"></div>
+    </main>
+</body>
+</html>
