@@ -94,57 +94,96 @@ aside{
 .informations{
     display: flex;
     flex-direction: row;
-    gap: 15px;
-    height: 10vh;
 }
 
-.sort__by__id{
-    font-family: 'Mulish';
-    font-size: 30px;
-    font-weight: bold;
-    display: flex;
-    justify-content: left;
-    flex-direction: row;
-}
-
-.sort__by__id button{
-    width: 100px;
+.informations input{
+    margin-right: 0.5vw;
     cursor: pointer;
-    color: #fff;
-    background-color: #ff0000; 
-    border: 2px solid #ff0000;
-    height: 3.2em;
-    border-radius: 100px;
-    transition: 0.3s ease-in-out;
-    margin-right: 2vw;
-    align-items: center;
-}  
+}
 
-.sort__by__id button:hover{
-    background-color:  #FFD700;
-    color: #0000FF;
-    border: 2px solid black;
+.informations label{
+    cursor: pointer;
+    color: rebeccapurple;
+    
 }
 
 .total__price{
     font-weight: bold;
     color: #00134c;
-    margin-top: 3vh;
-}
-
-.box{
-    display: flex;
-    width: 25vw;
-    height: 25vh;
-    
+    margin-top: 5vh;
 }
 
 .info{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 3vw;
+    padding: 5vh 3vw;
+    grid-row-gap: 3vh;
+    grid-column-gap: 3vw;
 }
 
-.price{
-    margin: 0 1vw;
+.item {
+    width: 20vw;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    border: 0.2vw solid #ff0000;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.item h2 {
+    margin-left: 1vw;
+    color: black;
+}
+
+.item p {
+    color: black;
+    margin: 2vh 0 2vh 1vw;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+.actions button {
+    width: 45%;
+    height: 5vh;
+    border: none;
+    border-radius: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.actions button:hover {
+    color: #0000FF;
+    background-color: #FFD700;
+}
+
+.edit {
+    background-color: red;
+    color: white;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.alert {
+    width: 0;
+    height: 25vh;
+    background-color: white;
+    color: red;
+    position: absolute;
+    right: 3vw;
+    top: 10vh;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
 }
