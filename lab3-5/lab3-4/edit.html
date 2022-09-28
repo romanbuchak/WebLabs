@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create page</title>
+    <link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+    <header>
+        <h1 onclick="toMainPage()">New Post</h1>
+    </header>
+    <main>
+        <input type="text" placeholder="Write a name >>>" id="name_of_box">
+        <input type="text" placeholder="Write a size >>>" id="size_of_box">
+        <input type="number" placeholder="Write a price >>>" id="price_of_box">
+        <button onclick="updateBoxes()">Edit Box</button>
+    </main>
+    <div class="alert" onclick="hideAlert()"></div>
+    <script src="js/edit.js"></script>
+</body>
+</html>

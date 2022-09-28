@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    width: 50vw;
+    height: 12vh;
+    border-radius: 10px;
+    color: blueviolet;
+    background-color: antiquewhite;
+}
+
+button{
+    width: 50vw;
+    height: 6vh;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: aliceblue;
+    background-color:crimson;
+}
+
+button:hover{
+    border: 2px solid crimson;
+    color: crimson;
+    background-color: antiquewhite;
+}
+
+.alert {
+    width: 0;
+    height: 25vh;
+    background-color: red;
+    color: white;
+    position: absolute;
+    right: 3vw;
+    top: 10vh;
+    transition: 1s;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+}
